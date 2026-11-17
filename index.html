@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaparral — Coming soon</title>
+  <meta name="description" content="Chaparral, knitwear. Coming soon." />
+  <meta name="theme-color" content="#e8d8c6" />
+
+  <style>
+    /* Fonts are free and open (SIL Open Font License); the files and their
+       licenses live in the /fonts folder. */
+    @font-face {
+      font-family: 'Fondamento';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/fondamento-latin-400-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Sorts Mill Goudy';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/sorts-mill-goudy-latin-400-normal.woff2') format('woff2');
+    }
+
+    :root {
+      --bg: #e8d8c6;
+      --ink: #000000;
+      --name-font: 'Fondamento', 'Sorts Mill Goudy', Georgia, serif;
+      --text-font: 'Sorts Mill Goudy', Georgia, serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: var(--bg); height: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--text-font);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      text-align: center;
+      padding: 0 1.25rem;
+      /* sit a little above true center, like a title page */
+      transform: translateY(-5vh);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--name-font);
+      font-style: italic;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      /* the last letter also gets spacing after it; pad the other side so the
+         word stays visually centered */
+      padding-left: 0.24em;
+      font-size: clamp(2rem, 6.6vw, 5.4rem);
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0.7em 0 0;
+      font-family: var(--text-font);
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: clamp(1.1rem, 3.9vw, 3.1rem);
+      line-height: 1.1;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Chaparral</h1>
+    <p>Coming soon</p>
+  </main>
+</body>
+</html>
